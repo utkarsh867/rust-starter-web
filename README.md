@@ -6,6 +6,7 @@ This project was built to help quickstart Rust projects for backend servers.
 
 ### Feature set of the backend server
 
-- [ ] REST API routes
+- [x] REST API routes
 - [ ] Connection to a DB
-- [ ] Logging
+- [x] Logging
+- [ ] Docker deployment
