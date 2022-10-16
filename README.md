@@ -7,6 +7,24 @@ This project was built to help quickstart Rust projects for backend servers.
 ### Feature set of the backend server
 
 - [x] REST API routes
-- [ ] Connection to a DB
+- [x] Connection to a DB
 - [x] Logging
 - [ ] Docker deployment
+
+### Developer notes
+
+#### Dependency and linker setup for libpql (postgres C library)
+
+On MacOS, the `LIBRARY_PATH` environment variable must be set.
+
+```commandline
+export LIBRARY_PATH=/usr/local/opt/libpq/lib
+```
+
+#### Connection to local database
+
+The `DATABASE_URL` environment variable must be set.
+
+```commandline
+export DATABASE_URL=postgres://username:password@localhost:5432/diesel_demo
+```
